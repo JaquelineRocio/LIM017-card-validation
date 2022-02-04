@@ -8,6 +8,10 @@ main {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 input{
-    border-radius: 9px;
-    border-color: brown;
+    width: 20%;
+    height: 35px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 40px;
 }
