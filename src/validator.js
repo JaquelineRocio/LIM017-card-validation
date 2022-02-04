@@ -4,6 +4,7 @@ const validator = {
     let Numbers = Array.from(CardNumber, Number).reverse();
     //Multiplicar por dos las posiciones pares y sumar los numeros mayores o igual a 10
     let BigNumber = 0;
+    let total = 0;
     for(let i=0; i<Numbers.length; i++)
     {
       if((i+1)%2 == 0 ){
@@ -25,8 +26,10 @@ const validator = {
           
       }
     }
-
-    return Numbers;
+    //Sumando los elementos de array Numbers
+    total = Numbers.reduce((a, b) => a + b, 0);
+    //validando la tarjeta
+    return total%10==0 ?  "Numero de tarjeta valida" : "Numero de tarjeta invalida";
 
   },
   maskify(){
