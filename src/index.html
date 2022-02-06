@@ -21,12 +21,15 @@
     </figure> 
     <main>
       <label for="CardNumber">Ingrese su número de tarjeta</label>
-      <input type="text" id="CardNumber" >
+      <input type="text" id="inpCardNumber" maxlength="16" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/>
+      
       <button id="btnVerify">Verificar</button>
       <div id="divVerified"></div>
      </main>
    </section>
-    <footer></footer>
+    <footer>
+    
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
