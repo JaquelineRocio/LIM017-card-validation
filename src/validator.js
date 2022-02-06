@@ -29,7 +29,7 @@ const validator = {
     //Sumando los elementos de array Numbers
     total = Numbers.reduce((a, b) => a + b, 0);
     //validando la tarjeta
-    return total%10==0 ?  "Numero de tarjeta valida" : "Numero de tarjeta invalida";
+    return total%10==0 ?  true : false;
 
   },
   maskify(CardNumber){

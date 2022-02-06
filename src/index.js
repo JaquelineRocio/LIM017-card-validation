@@ -7,7 +7,7 @@ let divVerified = document.getElementById('divVerified');
 let div4HideNumbers = document.getElementById('HideNumbers');
 btnVerify.addEventListener('click',()=>{
     //obtener el Numero de Tarjeta e insertarlo en un div del index.html
-    divVerified.innerHTML=validator.isValid(inpCardNumber.value);
+    divVerified.innerHTML=validator.isValid(inpCardNumber.value)? "Numero de tarjeta VALIDO" : "Numero de tarjeta INVALIDO";
     div4HideNumbers.innerHTML = validator.maskify(inpCardNumber.value);
     div4HideNumbers.style.display = 'block';
     
