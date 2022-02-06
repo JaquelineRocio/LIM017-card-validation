@@ -32,8 +32,19 @@ const validator = {
     return total%10==0 ?  "Numero de tarjeta valida" : "Numero de tarjeta invalida";
 
   },
-  maskify(){
-    return String;
+  maskify(CardNumber){
+    //Obtener el largo del card number
+    let lengthCN = CardNumber.length;
+    //Se hace una copia de una parte del string de acuerdo a su longitud
+    let last4Numbers = CardNumber.slice(lengthCN-4,lengthCN+1);
+    //Crear una nuevo string para almacenar la cantidad de X de acuerdo al length 
+    let xString='';
+    for(let i=0; i< lengthCN-4; i++){
+      xString=xString+'#';
+    }
+    //concatenar ambos strings
+    let hideCardNumber = xString.concat(last4Numbers);
+    return hideCardNumber ;
   }
 };
 
