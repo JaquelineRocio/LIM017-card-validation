@@ -1,5 +1,11 @@
 const validator = {
   isValid(CardNumber){
+    if(CardNumber=='')
+    {
+      alert("Debe ingresar un numero")
+    }
+    else
+    {
     //Convertiendo CardNumber en un array de numeros e invertiendo orden
     let Numbers = Array.from(CardNumber, Number).reverse();
     //Multiplicar por dos las posiciones pares y sumar los numeros mayores o igual a 10
@@ -30,7 +36,7 @@ const validator = {
     total = Numbers.reduce((a, b) => a + b, 0);
     //validando la tarjeta
     return total%10==0 ?  true : false;
-
+  }
   },
   maskify(CardNumber){
     //Obtener el largo del card number

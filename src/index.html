@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -9,29 +9,36 @@
     <header>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Detalle de los productos</li>
-          <li>Método de pago</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Detalle de los productos</a></li>
+          <li><a href="#">Método de pago</a></li>
         </ul>
       </nav>
     </header>
-   <section>
-    <figure>
-
-    </figure> 
-    <main>
-      <label for="CardNumber">Ingrese su número de tarjeta</label>
-      <input type="text" id="inpCardNumber" maxlength="16" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"/>
-      <div id="HideNumbers">
-        
+    <section>
+      <div id="tempCard">
+        1234 5678 9123 4567
       </div>
-      <button id="btnVerify">Verificar</button>
-      <div id="divVerified"></div>
-     </main>
-   </section>
-    <footer>
-    
-    </footer>
+      <label for="CardNumber">Número de tarjeta</label>
+        <input
+          type="text"
+          id="inpCardNumber"
+          minlength="10"
+          maxlength="16"
+          onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+          required
+        />
+        <div id="HideNumbers"></div>
+        <button id="btnVerify">Verificar</button>
+        <div id="divVerified"></div>
+      <main>
+        
+      </main>
+      <div id="products">
+        2
+      </div>
+    </section>
+    <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
