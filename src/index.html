@@ -16,7 +16,9 @@
       </nav>
     </header>
     <section>
-      <div id="tempCard">
+
+      <main>
+              <div id="HideNumbers">
         1234 5678 9123 4567
       </div>
       <label for="CardNumber">Número de tarjeta</label>
@@ -28,15 +30,19 @@
           onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
           required
         />
-        <div id="HideNumbers"></div>
+        <div ></div>
         <button id="btnVerify">Verificar</button>
         <div id="divVerified"></div>
-      <main>
-        
       </main>
       <div id="products">
-        2
+        <picture class="imgBook one"><img src="img/rsz_11el_principito.jpg" alt=""></picture>
+        <picture class="imgBook two"><img src="img/rsz_1la_ladrona_de_libros.jpg" alt=""></picture>
+        <picture class="imgBook three"><img src="img/rsz_narnia-libro.jpg" alt=""></picture>
+        <div id="total">
+          TOTAL: S/ 300
+        </div>
       </div>
+
     </section>
     <footer></footer>
     <script src="index.js" type="module"></script>
