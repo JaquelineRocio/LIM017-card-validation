@@ -6,6 +6,53 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="mainPage">
+      <div id="landing-page">
+        <input type="text" name="" id="buscar" placeholder="Buscar libros">
+        <div id="title">Cuentos para niños</div>
+          <div id="first-triangle"></div>
+          <div id="second-triangle"></div>
+          <div id="rectangle"></div>
+          <div id="little-girl"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/b1e8836e-91c9-4119-92f1-0258c6cbebc0.png" alt=""></div>
+          <div id="book1"> <img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/8f6ce11b-05f9-4fb1-80cf-4eca47082e8a.png" alt=""></div>
+          <div id="book2"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/71cf736d-065b-46b5-95e9-4e10109663e2.png" alt=""></div>
+          <div id="book3"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/edaa9d35-c772-439b-885c-d93155b34324.png" alt=""></div>
+          <div id="book4"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/b39278df-88b1-45db-9d02-83019a4a1591.png" alt=""></div>
+          <div id="book5"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/456b5ea5-2848-4713-8a38-f1ad81f74b5d.png" alt=""></div>
+          <div id="book6"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/456b5ea5-2848-4713-8a38-f1ad81f74b5d.png" alt=""></div>
+          <div id="book7"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/a1739c07-32f2-432c-b697-a5fd01114208.png" alt=""></div>
+          <div id="book8"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/2b9015f2-0f01-4225-b1b0-2a0c597efadc.png" alt=""></div>
+      </div>
+      <div id="booksContainer">
+        <div id="text2">Erase una vez...<br><p id="descripcion">A continuación presentamos los libros más recomendados para que los niños empiecen a leer:</p></div>
+        <div id="hada"><img id="hadaImg" src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/3e869e1f-4366-41f2-a906-64898fab9f67.png" alt=""></div>
+        
+        <img id="eP" src="img/el_principito.jpg" alt="">
+        <div id="rect"> </div>
+  
+        <img src="img/rsz_1la_ladrona_de_libros.jpg" alt="" id="laLi">
+        <div id="rect2"></div>
+        <img id="espada" src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/b51313f6-0596-4da1-afa0-e98670c95d8c.png" alt="">
+       
+      </div>
+      <div id="booksContainer2">
+        <div id="text3">Sabias que...<br><p id="descripcion2">Al leer libros puedes vivir adventuras con tan solo imaginarlo.</p></div>
+        <div id="dragon"><img id="dragonImg" src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/6f43e64a-26c3-4e4f-a292-82d94057c165.png" alt=""></div>
+        
+        <img id="eP" src="img/rsz_narnia-libro.jpg" alt="">
+        <div id="rect"> </div>
+  
+        <img src="img/rsz_1la_ladrona_de_libros.jpg" alt="" id="laLi">
+        <div id="rect2"></div>
+        <img id="lobo" src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/9854026a-4b54-4bd6-9705-8908f561b67c.png" alt="">
+        
+      </div>
+      <div id="containerBuy">
+        <button type="button" id="btnBuy">Comprar</button><br>
+      </div>
+      
+    </div>
+   <div id="payPage">
     <header>
       <nav>
         <ul>
@@ -15,36 +62,60 @@
         </ul>
       </nav>
     </header>
+    <div class="progress-bar">
+      <div class="step active"></div>
+      <div class="step active"></div>
+      <div class="step"></div>
+      <div class="step"></div>
+    </div>
     <section>
-
+     
       <main>
+        <h4>PAGO</h4><br>
               <div id="HideNumbers">
         1234 5678 9123 4567
       </div>
-      <label for="CardNumber">Número de tarjeta</label>
+      <p id="pMarca"></p>
+      <form onsubmit="return false">
+        <label for="CardNumber">Número de tarjeta</label>
         <input
           type="text"
           id="inpCardNumber"
           minlength="10"
           maxlength="16"
+          placeholder="1234 5678 9123 5896"
           onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
           required
         />
         <div ></div>
-        <button id="btnVerify">Verificar</button>
+        <button id="btnVerify" type="submit">Verificar</button>
+      
+      
         <div id="divVerified"></div>
+      </form>
+        
       </main>
       <div id="products">
-        <picture class="imgBook one"><img src="img/rsz_11el_principito.jpg" alt=""></picture>
+        <h4>RESUMEN DE LA COMPRA</h4><br>
+        <picture ><img class="imgBook one" src="img/rsz_11el_principito.jpg" alt=""></picture>
         <picture class="imgBook two"><img src="img/rsz_1la_ladrona_de_libros.jpg" alt=""></picture>
-        <picture class="imgBook three"><img src="img/rsz_narnia-libro.jpg" alt=""></picture>
+        
         <div id="total">
           TOTAL: S/ 300
         </div>
       </div>
 
     </section>
-    <footer></footer>
+    
+   </div>
+    
+    <footer>
+     <div>
+       Contact Us:<br>
+       9999999999<br>
+       contact@gmail.com<br>
+     </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
