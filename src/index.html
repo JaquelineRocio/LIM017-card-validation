@@ -18,7 +18,7 @@
           <div id="book2"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/71cf736d-065b-46b5-95e9-4e10109663e2.png" alt=""></div>
           <div id="book3"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/edaa9d35-c772-439b-885c-d93155b34324.png" alt=""></div>
           <div id="book4"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/b39278df-88b1-45db-9d02-83019a4a1591.png" alt=""></div>
-          <div id="book5"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/456b5ea5-2848-4713-8a38-f1ad81f74b5d.png" alt=""></div>
+          <div id="book5"><img id="imgBook5" src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/456b5ea5-2848-4713-8a38-f1ad81f74b5d.png" alt=""></div>
           <div id="book6"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/456b5ea5-2848-4713-8a38-f1ad81f74b5d.png" alt=""></div>
           <div id="book7"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/a1739c07-32f2-432c-b697-a5fd01114208.png" alt=""></div>
           <div id="book8"><img src="https://images.genial.ly/5cdbd9febef14a0fcc951e75/2b9015f2-0f01-4225-b1b0-2a0c597efadc.png" alt=""></div>
@@ -62,21 +62,21 @@
         </ul>
       </nav>
     </header>
-    <div class="progress-bar">
-      <div class="step active"></div>
-      <div class="step active"></div>
-      <div class="step"></div>
-      <div class="step"></div>
-    </div>
+   
     <section>
      
       <main>
         <h4>PAGO</h4><br>
-              <div id="HideNumbers">
-        1234 5678 9123 4567
+      <div id="HideNumbers" class="hideNumberClass">
+        <div id="userInput" class="userCardNumber">
+          _ _ _ _ - _ _ _ _ - _ _ _ _ - _ _ _ _
+        </div>
+        <div id="divGetIssuer">
+          <div id="antes"></div>
+        </div>
       </div>
-      <p id="pMarca"></p>
-      <form onsubmit="return false">
+     
+      <form onsubmit="return false" id="formCardNumber">
         <label for="CardNumber">Número de tarjeta</label>
         <input
           type="text"
@@ -111,9 +111,14 @@
     
     <footer>
      <div>
-       Contact Us:<br>
-       9999999999<br>
-       contact@gmail.com<br>
+       Contact Us:
+       
+     </div>
+     <div>
+      9999999999
+     </div>
+     <div>
+       contactus@gmail.com
      </div>
     </footer>
     <script src="index.js" type="module"></script>

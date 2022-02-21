@@ -47,7 +47,7 @@ const validator = {
     let hideCardNumber = xString.concat(last4Numbers);
     return hideCardNumber ;
   },
-  isIssuerValid(issuerObject,inputValue){
+  getIssuerOne(issuerObject,inputValue){
     function isCard(issuer)
     { 
       if(typeof(issuer.value)=='object') 
@@ -57,6 +57,23 @@ const validator = {
     let isFind=issuerObject.find(isCard);
     return isFind;
     
+  },
+  getIssuerSecond(cardNumber,issuers){
+    let splitNumbers = Array.from(cardNumber);
+      let found = false;
+      let i=0;
+ 
+      let prefijo = String(splitNumbers[0]);
+  
+     while(!found&&i<5)
+        { 
+          found = issuers.find(issuer=>issuer.value == prefijo);
+          
+          i++;
+          prefijo = prefijo + splitNumbers[i];
+          
+        }
+        return found;
   }
 };
 
