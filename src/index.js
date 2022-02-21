@@ -12,7 +12,7 @@ const issuers = [
 {
     name: 'Diners Club / enRoute',
     value: 2014,
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Diners_Club_Logo3.svg/330px-Diners_Club_Logo3.svg.png'
+    img: 'img/diners_club_.png'
 },
 {
   name: 'JBC',
@@ -22,22 +22,22 @@ const issuers = [
 {
 name:  'Diners Club / enRoute',
 value: 2149,
-img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Diners_Club_Logo3.svg/330px-Diners_Club_Logo3.svg.png'
+img: 'img/diners_club_.png'
 },
 {
    name: 'Diners Club / Carte Blanche',
    value: [300, 301, 302, 303, 304, 305],
-   img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Diners_Club_Logo3.svg/330px-Diners_Club_Logo3.svg.png'
+   img: 'img/diners_club_.png'
 },
   {
     name: 'Diners Club / International',
     value: 36,
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Diners_Club_Logo3.svg/330px-Diners_Club_Logo3.svg.png'
+    img: 'img/diners_club_.png'
   },
   {
     name: 'Diners Club / Carte Blanche',
     value: 38,
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Diners_Club_Logo3.svg/330px-Diners_Club_Logo3.svg.png'
+    img: 'img/diners_club_.png'
   },
   {
     name: 'JCB',
@@ -76,9 +76,7 @@ let antes = document.getElementById('antes');
 })
 function issuerStyle(find){
   if(find)
-  { if(find.img == 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Diners_Club_Logo3.svg/330px-Diners_Club_Logo3.svg.png')
-      newImg.classList.add('specificIssuer');
-    else
+  { 
       newImg.classList.add('issuerDesign');
     newImg.src = find.img;
     divGetIssuer.insertBefore(newImg,antes);
