@@ -1,3 +1,24 @@
+# LIBROS PARA NIÑOS
+Este proyecto presenta una página web en la que se muestran libros para niños.
+[![HomePage](https://jaquelinerocio.github.io/LIM017-card-validation/img/HomePage.png "HomePage")](https://jaquelinerocio.github.io/LIM017-card-validation/img/HomePage.png "HomePage")
+
+[![CardPage](https://jaquelinerocio.github.io/LIM017-card-validation/img/InterfazCardValidation.png "CardPage")](https://jaquelinerocio.github.io/LIM017-card-validation/img/InterfazCardValidation.png "CardPage")
+## Definición del producto
+**Los usuarios** son todas las personas que busquen adquirir libros para niños mediante un pago online.
+**El objetivo del usuario** es ver los libros disponibles de manera sencilla y luego pagar los libros que desee primero verificando si la validación de su tarjeta.
+**Este producto resuelve el problema** de personas como los padres de familia que buscan libros especificamente para niños que sean entretenidos y de fácil lectura, y así  les permita entrar en el mundo de la lectura con mayor facilidad.
+## UX 
+[![Papel](https://jaquelinerocio.github.io/LIM017-card-validation/img/UXpapel.jpg "Papel")](https://jaquelinerocio.github.io/LIM017-card-validation/img/UXpapel.jpg "Papel")
+[![Diseño en Figma ](https://jaquelinerocio.github.io/LIM017-card-validation/img/Proyecto%20Card%20Validation.png " ")](https://jaquelinerocio.github.io/LIM017-card-validation/img/Proyecto%20Card%20Validation.png " ")
+[========]
+
+## Objetivos de aprendizaje
+-básico de css y html , entender el funcionamiento del DOM
+- Maquetar una pagina lo más fielmente posible al diseño en figma
+- Aprender funciones, objetos, arrays, y otros conceptos de javascript
+- Usar GitHub para almacenar las versiones del proyecto y desplegar una página
+- Entender y pasar los tests
+
 # Tarjeta de crédito válida
 
 ## Índice
