@@ -105,25 +105,33 @@ let btnVerify=document.getElementById('btnVerify');
 let inpCardNumber=document.getElementById('inpCardNumber');
 let divVerified = document.getElementById('divVerified');
 
-let userInput=document.getElementById('userInput');
+let showUserInput=document.getElementById('showUserInput');
 
 btnVerify.addEventListener('click',()=>{
+  if(inpCardNumber.value)
+  {   
+      //obtener el Numero de Tarjeta e insertarlo en un div del index.html
+      if(validator.isValid(inpCardNumber.value))
+      {
+         divVerified.innerHTML= "Numero de tarjeta VALIDO ✅";
+         showUserInput.innerHTML = validator.maskify(inpCardNumber.value);
+         showUserInput.classList.add('showUserCardNumber');
+         let found=validator.getIssuerSecond(inpCardNumber.value,issuers);
+         issuerStyle(found);
+      }
+      else
+      {
+         divVerified.innerHTML="Numero de tarjeta INVALIDO ❌";
+         divGetIssuer.style.display = "none";
+      }
 
-         //obtener el Numero de Tarjeta e insertarlo en un div del index.html
-         if(validator.isValid(inpCardNumber.value))
-         {
-            divVerified.innerHTML= "Numero de tarjeta VALIDO ✅";
-            userInput.innerHTML = validator.maskify(inpCardNumber.value);
-            userInput.classList.add('userCardNumber');
-            let found=validator.getIssuerSecond(inpCardNumber.value,issuers);
-            issuerStyle(found);
-         }
-         else
-         {
-            divVerified.innerHTML="Numero de tarjeta INVALIDO ❌";
-            divGetIssuer.style.display = "none";
-         }
-   
+  }
+  else
+  {
+    divVerified.innerText='Debe ingresar un valor ⚠';
+    
+  }
+       
  
    
 });
