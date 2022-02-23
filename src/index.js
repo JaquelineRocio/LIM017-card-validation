@@ -71,8 +71,7 @@ let antes = document.getElementById('antes');
     inpCN.addEventListener('keyup', ()=>{
     let isFind = validator.getIssuerOne(issuers, inpCN.value);
     issuerStyle(isFind);
-    
-   
+     
 })
 function issuerStyle(find){
   if(find)
