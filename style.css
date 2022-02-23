@@ -14,7 +14,11 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;**/
-  background-image: linear-gradient(to top, #efefef, #bbbcc6, #858ca0, #4e607a, #053856);
+  /**background-image: linear-gradient(to bottom, #3a0088, #af0076, #f00c52, #ff7927, #ffca03);**/
+  background-image: url('https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size:100vw;
 }
 
 #mainPage{
@@ -141,7 +145,16 @@ body{
   width: 309px;
   height: 360px;
 }
-#eP{
+#eP1{
+  grid-column: 3/5;
+  grid-row: 3/6;
+  z-index: 1;
+  margin-left: 20px;
+  width: 240px;
+  height: 350px;
+  border-radius: 10px;
+}
+#eP2{
   grid-column: 3/5;
   grid-row: 3/6;
   z-index: 1;
@@ -196,7 +209,16 @@ body{
   margin-right: 100px;
   margin-top: 40px;
 }
-#laLi{
+#laLi1{
+  grid-column: 5;
+  grid-row: 3/6;
+  z-index: 1;
+  margin-left: 20px;
+  width: 240px;
+  height: 350px;
+  border-radius: 10px;
+}
+#laLi2{
   grid-column: 5;
   grid-row: 3/6;
   z-index: 1;
@@ -304,11 +326,14 @@ li{
     
     
 }
+/*Selector descendiente*/
 li a{ 
     color: white;
     text-decoration: none;
+    font-weight: bold;
     
 }
+/*pseudoclases*/
 li:hover {
     background-color: rgba(255, 255, 255, 0.5);
     height: 40px;
@@ -316,7 +341,7 @@ li:hover {
     border-radius: 5px;
   }
 
-  
+  /*selector de tipo*/
 section {
 
     display: flex;
@@ -335,7 +360,7 @@ main {
     box-shadow: 0 25px 45px rgba(0,0,0,0.25);
     border: 1px solid rgba(255,255,255,0.25);
     backdrop-filter: blur(5px);
-    border-radius: 10px 0 0 10px;  
+    border-radius: 10px;  
 }
 
 #HideNumbers{
@@ -360,6 +385,8 @@ main {
 
 .showUserCardNumber{
   grid-area: cardNum;
+  color:#930077;
+  font-weight: bold;
 }
 #divGetIssuer{
   grid-area: imgIssuer;
@@ -381,7 +408,8 @@ main {
 }
 label{
     grid-area: label;
-    color: white;
+    color: #3A0088;
+    font-weight: bold;
     padding: auto;
     margin-left: 40px;  
 }
@@ -393,6 +421,7 @@ label{
 }
 #inpCardNumber::placeholder{
   font-style: oblique;
+  color: #930077;
 }
 #inpCardNumber{
   grid-area: input;
@@ -400,6 +429,7 @@ label{
     border: 1px solid #e6e6e6;
     border-radius: 6px;
     outline: none;
+    border-color: #930077;
 }
 #btnVerify:active{
   color: white;
@@ -425,9 +455,11 @@ label{
     margin: 20px;
     margin-right: 100px;
     flex: 40%;
-    background-color: #D1D9FB;
+    background-color: rgba(147,0,119,0.50);
+    backdrop-filter: blur(5px);
     justify-items: center;
     align-items: center;
+    border-radius: 10px;
 
 }
 #titleResume{
@@ -441,7 +473,7 @@ label{
 .infoProduct{
 background-color: #FEFEFE;
 border-radius: 5px;
-box-shadow: 8px -9px 2px 1px rgb(0 0 0 / 10%);
+box-shadow: 8px -9px 2px 1px rgb(58 0 136 /100%);
 color: gray;
 padding-left: 100px;
 height: 80px;
@@ -476,7 +508,7 @@ width: 250px;
 #total{
     grid-column: 3/ span 2;
     grid-row: 9;
-    color: #3A0088;
+    color: white;
     font-weight: bolder;
 }
 #titleVerify{
@@ -502,6 +534,7 @@ width: 250px;
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px;
+  font-weight: bold;
   height: 80px;
   width: 150px;
 }
